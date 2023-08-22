@@ -1,0 +1,15 @@
+# Original inputs
+prompt: "an apple on the table"
+cindition_path: "./examples/table_depth/table.png"
+mask_path: "./mask_examples/mask_table22.png"
+scale: 9 # unconditional guidance scale. Note that a higher value encourages deviation from the source image
+num_ddim_sampling_steps: 30 # if left empty, defaults to the ddim_steps arg used in the source experiment
+
+# Controlling parameters
+guidance_threshold: 20 # should be in [0, num_ddim_sampling_steps]
+alpha: 0.25  # semantic intensity 
+inject_padding_num : 3 # the number of padding tokens to reweight
+token_index: [0, 2]
+
+# Image saving path
+save_path: "./outputs/our.png"
