@@ -4,7 +4,7 @@
 
 ## Usage
 
-**To plug-and-play diffusion features, please follow these steps:**
+**To achieve M-Control, please follow two steps:**
 
 1. [Setup](#setup)
 2. [Mask-Guided ControlNet](#inference)
