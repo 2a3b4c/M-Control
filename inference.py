@@ -72,6 +72,7 @@ def main():
     alpha = setup_config.alpha
     token_index = setup_config.token_index
     inject_padding_num = setup_config.inject_padding_num
+    save_path = setup_config.save_path
     
     generator = torch.Generator(device="cpu").manual_seed(123)
     output_our, _ = pipe_canny(prompt=prompt, c_encoder=3, u_decoder=4, 
@@ -79,7 +80,7 @@ def main():
                     num_inference_steps=num_inference_steps, guidance_scale=guidance_scale, 
                     num_images_per_prompt=1, controlnet_conditioning_scale=float(1),
                     generator=generator, mask=mask_image, height=height, width=width, alpha=alpha, inject_padding_num=inject_padding_num, token_index=token_index)
-    output_our.images[0].save("./outputs/our.png")
+    output_our.images[0].save(save_path)
 
 
 if __name__ == "__main__":
