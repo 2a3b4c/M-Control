@@ -1,4 +1,4 @@
-# M-Control: Improving Text-Image Consistency via Mask-Guided ControlNet
+# M-Control: Improving Text-Image Consistency via Mask-Guided ControlNet (paper will be released later)
 
 ![teaser](./assets/teaser.png)
 
