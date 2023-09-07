@@ -18,7 +18,8 @@ and has shared environmental dependencies.
 
 ```
 conda env create -f environment.yaml
-conda activate M-Control
+conda activate m-control
+pip install .
 ```
 
 ## Mask-Guided ControlNet
